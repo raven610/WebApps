@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Home
+{% endblock %}
+
+
+{% block body %}
+	<form action="{% url 'answer' %}">
+		<h1>Word Count</h1>
+		<textarea name = "fulltext" rows = "20" cols="100"></textarea>
+		<br/>
+		<button>Go!</button>
+	</form>
+{% endblock %}
